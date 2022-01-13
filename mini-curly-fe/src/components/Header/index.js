@@ -1,6 +1,9 @@
 import React from "react";
-import Categorys from "./Categorys";
-import logo from "../images/logo.png";
+import Categorys from "../Categorys";
+import logo from "../../images/logo.png";
+import imformationImg from "../../images/kurlyRes.png";
+import './Header.scss';
+
 
 function Header() {
     return (
@@ -8,19 +11,21 @@ function Header() {
             <header className="header__warpper">
                 <div className="top__wrapper">
                     <div className="top__wrapper__left">
-                        <button className="shippng__information__btn">샛별-택배 배송안내 &gt; </button>
+                        <a href="#" className="shippng__information">
+                            <img src={imformationImg} alt="~" />
+                        </a>
                     </div>
                     <div className="top__wrapper__right">
-                        <button className="sign__up__btn">회원가입</button>
-                        <button className="sign__in__btn">로그인</button>
-                        <button className="customer__service__center">고객센터</button>
+                        <a href="#" className="sign__up__btn">회원가입</a>
+                        <a href="#" className="sign__in__btn">로그인</a>
+                        <a href="#" className="customer__service__center">고객센터</a>
                     </div>
                 </div>
                 <div className="header__img">
                     <img src={logo} alt="~" />
                 </div>
-                <div className="category__wrapper">
-                    <Categorys />
+                <div className="menu__wrapper">
+                    <Categorys className="categorys" />
                     <a href="#" className="new__product">신상품</a>
                     <a href="#" className="new__product">신상품</a>
                     <a href="#" className="new__product">신상품</a>
