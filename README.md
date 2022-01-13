@@ -1,1 +1,1 @@
-# mini-curly-project-front
+# 쇼필몰 프젝트
