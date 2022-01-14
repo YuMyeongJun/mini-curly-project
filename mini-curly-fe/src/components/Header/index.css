@@ -1,0 +1,33 @@
+.header__wrapper {
+  flex: 1px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top__wrapper {
+  flex: 1;
+  display: flex;
+}
+
+.top__wrapper__left {
+  flex: 1;
+}
+
+.top__wrapper__right {
+  flex: 1;
+}
+
+.shipping__information > img {
+  width: 122px;
+  height: 22px;
+}
+
+.top__warapper__right > a {
+  float: left;
+  height: 37px;
+  padding: 0 12px;
+  color: #333;
+  line-height: 35px;
+  white-space: nowrap;
+}

@@ -2,16 +2,16 @@ import React from "react";
 import Categorys from "../Categorys";
 import logo from "../../images/logo.png";
 import imformationImg from "../../images/kurlyRes.png";
-import './Header.scss';
+import "./index.css";
 
 
 function Header() {
     return (
         <>
-            <header className="header__warpper">
+            <header className="header__wrapper">
                 <div className="top__wrapper">
                     <div className="top__wrapper__left">
-                        <a href="#" className="shippng__information">
+                        <a src="#" className="shipping__information">
                             <img src={imformationImg} alt="~" />
                         </a>
                     </div>
