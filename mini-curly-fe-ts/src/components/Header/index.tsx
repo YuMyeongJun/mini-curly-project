@@ -27,7 +27,7 @@ function Header() {
                     <img src={logo} alt="~" />
                 </div>
                 <div className="menu__wrapper">
-                    <Categorys className="categorys" />
+                    <Categorys />
                 </div>
             </header>
         </>

@@ -1,0 +1,74 @@
+.header__wrapper {
+  flex: 1px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+
+  .top__wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+
+    .top__wrapper__left {
+      flex: 1;
+
+      .shipping__information > img {
+        width: 122px;
+        height: 22px;
+      }
+    }
+
+    .top__wrapper__right {
+      flex: 1;
+      text-align: right;
+
+      & > ul {
+        list-style-type: none;
+
+        & > li {
+          display: inline;
+          margin: 5px;
+          font-size: 1.5vw;
+
+          .sign__up__btn,
+          .sign__in__btn {
+            ::after {
+              content: "";
+              float: right;
+              width: 1px;
+              height: 13px;
+              margin-top: 12px;
+              background-color: #333;
+            }
+          }
+
+          .customer__service__center {
+            ::before {
+              content: "";
+              position: absolute;
+              right: 13px;
+              top: 16px;
+              width: 8px;
+              height: 5px;
+              background: url(https://res.kurly.com/pc/ico/1908/ico_down_8x5.png)
+                no-repeat 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .header__img {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 80px;
+    }
+  }
+}
+
+a {
+  text-decoration-line: none;
+  color: #333;
+}
