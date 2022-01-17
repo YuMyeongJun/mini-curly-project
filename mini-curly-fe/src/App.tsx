@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
-import './css/App.scss';
+import './css/App.css';
 
 function App() {
   return (

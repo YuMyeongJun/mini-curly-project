@@ -1,0 +1,103 @@
+.category__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  gap: 2%;
+
+  .category__warpper {
+    flex: 0.8;
+    & > ul {
+      position: relative;
+      list-style: none;
+      list-style-type: none;
+      & > li {
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        width: 20%;
+        text-align: center;
+      }
+    }
+
+    .category__icon {
+      float: left;
+      width: 16px;
+      height: 14px;
+      margin: 5px 14px 0 0;
+      background: url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all_off.png)
+        no-repeat;
+      background-size: 16px 14px;
+    }
+  }
+
+  .search__wrapper {
+    flex: 0.2;
+  }
+
+  .location__wrapper {
+    .btn__location {
+      overflow: hidden;
+      right: 107px;
+      top: 10px;
+      width: 36px;
+      height: 36px;
+      border: 0 none;
+      background: url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting.svg?ver=1);
+      font-size: 0;
+      text-indent: -9999px;
+    }
+  }
+
+  .favorite__wrapper {
+    .btn__pick {
+      display: inline-block;
+      width: 36px;
+      border: none;
+      color: transparent;
+      background: url(https://res.kurly.com/pc/service/pick/btn-heart-off.svg)
+        no-repeat 50% 50%;
+      cursor: pointer;
+    }
+  }
+
+  .cart__wrapper {
+    .btn__cart {
+      position: relative;
+      display: block;
+      width: 36px;
+      height: 36px;
+      background: url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg)
+        no-repeat 50% 50%;
+
+      .screen_out {
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        left: -9999px;
+        width: 1px;
+        height: 1px;
+        font-size: 0;
+        line-height: 0;
+        text-indent: -9999px;
+      }
+
+      .realtime__cartcount {
+        position: absolute;
+        left: 19px;
+        top: -1px;
+        min-width: 10px;
+        height: 14px;
+        padding: 0 5px;
+        border: 2px solid #fff;
+        border-radius: 15px;
+        background-color: #5f0080;
+        font-size: 9px;
+        color: #fff;
+        line-height: 15px;
+        text-align: center;
+        white-space: nowrap;
+      }
+    }
+  }
+}
