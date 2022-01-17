@@ -1,1 +1,10 @@
-# 쇼필몰 프젝트
+# ShoppingMall Project
+
+## Project Stack
+
+- react
+- typescript
+- node-sass
+- html
+- css
+- ...
