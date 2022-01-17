@@ -5,4 +5,7 @@
 
 ## default setting
 
-0. `npm start`
+0. nodejs install
+1. npm install
+2. npm update => 일부 모듈 빌드 실패 시
+3. npm start
