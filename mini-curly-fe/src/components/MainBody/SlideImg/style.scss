@@ -1,0 +1,21 @@
+.slide__container{
+    position: relative;
+    width: 100%;
+    display: flex;
+
+    .slide__left__slide{
+
+    }
+
+    .slide__images{
+        flex:1;
+        display: flex;
+        img{
+            width: 100px;
+        }
+    }
+
+    .slide__right__slide{
+        
+    }
+}

@@ -1,0 +1,21 @@
+.slide__container {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide__container .slide__images {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide__container .slide__images img {
+  width: 100px;
+}
+/*# sourceMappingURL=style.css.map */

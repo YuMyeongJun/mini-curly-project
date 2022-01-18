@@ -1,5 +1,5 @@
 import React from "react";
-import Categorys from "../Categorys";
+import Categorys from "./Categorys";
 import logo from "../../images/logo.png";
 import imformationImg from "../../images/kurlyRes.png";
 import "./style.css";
