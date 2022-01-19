@@ -10,9 +10,9 @@ function Header() {
             <header className="header__wrapper">
                 <div className="top__wrapper">
                     <div className="top__wrapper__left">
-                        <a href="#" className="shipping__information">
+                        <Link to="/" className="shipping__information">
                             <img src={`${process.env.PUBLIC_URL}/images/kurlyRes.png`} alt="~" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="top__wrapper__right">
                         <ul>
@@ -23,7 +23,9 @@ function Header() {
                     </div>
                 </div>
                 <div className="header__img">
-                    <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="~" />
+                    <Link to="/">
+                        <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="~" />
+                    </Link>
                 </div>
             </header>
         </div>

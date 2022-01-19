@@ -2,6 +2,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
     .header__title{
         flex: 1;
@@ -11,9 +13,46 @@
         font-weight: bold;
     }
 
-    .sign__up__data__form{
+    .form__container{
         flex: 1;
-        
+        width: 50%;
+
+		.form__wrapper{
+			width: 100%;
+
+			.caption{
+				width: 100%;
+				text-align: right;
+			}
+
+			.inputs{
+				height: 44px;
+				width: 90%;
+				padding: 0 14px;
+				border: 1px solid #ccc;
+				font-size: 14px;
+				color: #333;
+				line-height: 20px;
+				border-radius: 3px;
+				background: #fff;
+				outline: none;
+				vertical-align: top;
+			}
+			.btn{
+				border: 1px solid #5f0080;
+				background-color: #fff;
+				color: #5f0080;
+				display: inline-block;
+    			width: 100%;
+				height: 44px;
+				border-radius: 3px;
+				font-weight: 700;
+				font-size: 14px;
+				line-height: 40px;
+				text-align: center;
+				outline: none;
+			}
+		}
     }
 }
 
@@ -29,21 +68,15 @@
 	background-color: #EEE;
 	display: table-header-group;
 }
-.divTableCell, .divTableHead {
-	border: 1px solid #999999;
+.divTableCell {
+	border: 0px solid #999999;
 	display: table-cell;
-	padding: 3px 10px;
-}
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-	font-weight: bold;
-}
-.divTableFoot {
-	background-color: #EEE;
-	display: table-footer-group;
-	font-weight: bold;
+	vertical-align: middle;
 }
 .divTableBody {
 	display: table-row-group;
+}
+
+.color-red{
+	color: red;
 }
