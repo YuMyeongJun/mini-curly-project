@@ -1,5 +1,5 @@
 import React from "react";
-import SlideImg from "./SlideImg";
+import SlideImg from "../../components/MainBody/SlideImg";
 
 function MainBody(){
     return (
