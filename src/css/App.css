@@ -1,4 +1,4 @@
-.container {
+#root {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,6 +10,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.5vw;
+}
+
+#root .container {
+  width: 70%;
 }
 /*# sourceMappingURL=App.css.map */

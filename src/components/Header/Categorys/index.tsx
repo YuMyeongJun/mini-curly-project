@@ -4,7 +4,7 @@ import './style.css';
 
 function Categorys() {
     return (
-        <>
+        <nav className="menu__wrapper">
             <div className="category__container">
                 <div className="category__warpper">
                     <ul>
@@ -42,7 +42,7 @@ function Categorys() {
                     </a>
                 </div>
             </div>
-        </>
+        </nav>
     );
 }
 

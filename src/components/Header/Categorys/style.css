@@ -1,5 +1,21 @@
-.category__container {
+.menu__wrapper {
+  position: relative;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__wrapper .category__container {
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,13 +26,13 @@
   gap: 2%;
 }
 
-.category__container .category__warpper {
+.menu__wrapper .category__container .category__warpper {
   -webkit-box-flex: 0.8;
       -ms-flex: 0.8;
           flex: 0.8;
 }
 
-.category__container .category__warpper > ul {
+.menu__wrapper .category__container .category__warpper > ul {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,7 +43,7 @@
   font-size: 0;
 }
 
-.category__container .category__warpper > ul > li {
+.menu__wrapper .category__container .category__warpper > ul > li {
   -webkit-box-flex: 1;
       -ms-flex: 1 auto;
           flex: 1 auto;
@@ -35,10 +51,10 @@
   position: relative;
   height: 100%;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
-.category__container .category__warpper .category__icon {
+.menu__wrapper .category__container .category__warpper .category__icon {
   float: left;
   width: 16px;
   height: 14px;
@@ -47,13 +63,13 @@
   background-size: 16px 14px;
 }
 
-.category__container .search__wrapper {
+.menu__wrapper .category__container .search__wrapper {
   -webkit-box-flex: 0.2;
       -ms-flex: 0.2;
           flex: 0.2;
 }
 
-.category__container .location__wrapper .btn__location {
+.menu__wrapper .category__container .location__wrapper .btn__location {
   overflow: hidden;
   right: 107px;
   top: 10px;
@@ -65,7 +81,7 @@
   text-indent: -9999px;
 }
 
-.category__container .favorite__wrapper .btn__pick {
+.menu__wrapper .category__container .favorite__wrapper .btn__pick {
   display: inline-block;
   width: 36px;
   border: none;
@@ -74,7 +90,7 @@
   cursor: pointer;
 }
 
-.category__container .cart__wrapper .btn__cart {
+.menu__wrapper .category__container .cart__wrapper .btn__cart {
   position: relative;
   display: block;
   width: 36px;
@@ -82,7 +98,7 @@
   background: url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg) no-repeat 50% 50%;
 }
 
-.category__container .cart__wrapper .btn__cart .screen_out {
+.menu__wrapper .category__container .cart__wrapper .btn__cart .screen_out {
   display: block;
   overflow: hidden;
   position: absolute;
@@ -94,7 +110,7 @@
   text-indent: -9999px;
 }
 
-.category__container .cart__wrapper .btn__cart .realtime__cartcount {
+.menu__wrapper .category__container .cart__wrapper .btn__cart .realtime__cartcount {
   position: absolute;
   left: 19px;
   top: -1px;
@@ -109,5 +125,16 @@
   line-height: 15px;
   text-align: center;
   white-space: nowrap;
+}
+
+.menu__wrapper::after {
+  content: "";
+  position: absolute;
+  z-index: 299;
+  left: 0;
+  top: 56px;
+  width: 100%;
+  height: 9px;
+  background: url(https://res.kurly.com/pc/service/common/1902/bg_1x9.png) repeat-x 0 100%;
 }
 /*# sourceMappingURL=style.css.map */

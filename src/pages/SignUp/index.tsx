@@ -9,7 +9,16 @@ function SignUp() {
             </article>
             <article className="sign__up__data__form">
                 <form method="POSt">
-
+                    <div className="caption"><span className="color-red">*</span>필수입력사항</div>
+                    <div className="divTable">
+                        <div className="divTableBody">
+                            <div className="divTableRow">
+                                <div className="divTableHeadCell"></div>
+                                <div className="divTableCell"></div>
+                                <div className="divTableCell"></div>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </article>
         </section>
