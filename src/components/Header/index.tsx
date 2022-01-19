@@ -1,9 +1,7 @@
 import React from "react";
 import Categorys from "./Categorys";
-import logo from "../../images/logo.png";
 import imformationImg from "../../images/kurlyRes.png";
 import "./style.css";
-
 
 function Header() {
     return (
@@ -12,7 +10,7 @@ function Header() {
                 <div className="top__wrapper">
                     <div className="top__wrapper__left">
                         <a href="#" className="shipping__information">
-                            <img src={imformationImg} alt="~" />
+                            <img src={`${process.env.PUBLIC_URL}/images/kurlyRes.png`} alt="~" />
                         </a>
                     </div>
                     <div className="top__wrapper__right">
@@ -24,7 +22,7 @@ function Header() {
                     </div>
                 </div>
                 <div className="header__img">
-                    <img src={logo} alt="~" />
+                    <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="~" />
                 </div>
                 <div className="menu__wrapper">
                     <Categorys />
