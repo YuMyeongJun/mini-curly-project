@@ -25,7 +25,7 @@ function SlideImg() {
             img: './images/slideImg1.jpg',
         },
     ];
-    
+
 
     return (
         <div className="slide__container">
@@ -33,9 +33,9 @@ function SlideImg() {
                 <button type="button" className="left__btn">123</button>
             </div>
             <div className="slide__images">
-            {
-                slides.map(element => <ImageContainer imageSrc={element.img} />)
-            }
+                {
+                    slides.map(element => <ImageContainer imageSrc={element.img} />)
+                }
             </div>
             <div className="slide__right__slide">
                 <button type="button" className="right__btn">123</button>

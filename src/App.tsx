@@ -5,17 +5,17 @@ import './css/App.css';
 
 function App() {
   return (
-    
+
     <BrowserRouter>
       <Header />
       <Menus />
       <Routes>
-        <Route path="/" element={<MainBody />}/>
-        <Route path="/signUp" element={<SignUp />}/>
+        <Route path="/" element={<MainBody />} />
+        <Route path="/signUp" element={<SignUp />} />
       </Routes>
       <Footer />
     </BrowserRouter>
-    
+
   );
 }
 
