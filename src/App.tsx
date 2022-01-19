@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Header, MainBody, SignUp } from './pages';
+import { Header, Footer, MainBody, SignUp } from './pages';
 import './css/App.css';
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
         <Route path="/" element={<MainBody />}/>
         <Route path="/signUp" element={<SignUp />}/>
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

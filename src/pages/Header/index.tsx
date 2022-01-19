@@ -25,10 +25,10 @@ function Header() {
                 <div className="header__img">
                     <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="~" />
                 </div>
-                <div className="menu__wrapper">
-                    <Categorys />
-                </div>
             </header>
+            <nav className="menu__wrapper">
+                <Categorys />
+            </nav>
         </>
     );
 }

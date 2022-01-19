@@ -1,11 +1,13 @@
 import React from "react";
 import SlideImg from "../../components/MainBody/SlideImg";
 
-function MainBody(){
+function MainBody() {
     return (
-        <div>
-            <SlideImg />
-        </div>
+        <section>
+            <article>
+                <SlideImg />
+            </article>
+        </section>
     );
 }
 
