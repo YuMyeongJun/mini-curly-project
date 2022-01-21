@@ -1,2 +1,153 @@
-.sign__up__container{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.sign__up__container .header__title{-webkit-box-flex:1;-ms-flex:1;flex:1;text-align:center;padding:25px;font-size:1.5vw;font-weight:bold}.sign__up__container .form__container{-webkit-box-flex:1;-ms-flex:1;flex:1;width:25%}.sign__up__container .form__container .form__wrapper{width:100%;font-size:0.6vw}.sign__up__container .form__container .form__wrapper .caption{width:100%;text-align:right}.sign__up__container .form__container .form__wrapper .inputs{height:44px;width:90%;padding:0 14px;border:1px solid #ccc;color:#333;line-height:20px;border-radius:3px;background:#fff;outline:none;vertical-align:top}.sign__up__container .form__container .form__wrapper .btn{border:1px solid #5f0080;background-color:#fff;color:#5f0080;display:inline-block;width:100%;height:44px;border-radius:3px;font-weight:700;line-height:40px;text-align:center;outline:none}.sign__up__container .form__container .form__wrapper .btn .address_search_img{display:inline-block;height:100%;margin-left:-14px;padding-left:24px;font-weight:700;font-size:14px;color:#5f0080;line-height:40px;background:url(../../../public/images/ico_search.svg) no-repeat 0 50%;background-size:25px 24px;vertical-align:top}.divTable{display:table;width:100%}.divTableRow{display:table-row}.divTableHeading{background-color:#eee;display:table-header-group}.divTableCell{border:0px solid #999999;display:table-cell;vertical-align:middle}.divTableBody{display:table-row-group}.color-red{color:red}
+.sign__up__container {
+  width: 100%;
+  min-width: 1050px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sign__up__container .header__title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding: 25px;
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.sign__up__container .form__container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 45%;
+  min-width: 500px;
+}
+
+.sign__up__container .form__container .form__wrapper {
+  width: 100%;
+  font-size: 0.8vw;
+}
+
+.sign__up__container .form__container .form__wrapper .caption {
+  width: 100%;
+  text-align: right;
+}
+
+.sign__up__container .form__container .form__wrapper .inputs {
+  height: 44px;
+  width: calc(100% - 28px);
+  padding: 0 14px;
+  border: 1px solid #ccc;
+  color: #333;
+  line-height: 20px;
+  border-radius: 3px;
+  background: #fff;
+  outline: none;
+  vertical-align: top;
+}
+
+.sign__up__container .form__container .form__wrapper .btn {
+  border: 1px solid #5f0080;
+  background-color: #fff;
+  color: #5f0080;
+  display: inline-block;
+  width: 100%;
+  height: 44px;
+  border-radius: 3px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  outline: none;
+}
+
+.sign__up__container .form__container .form__wrapper .btn .address_search_img {
+  display: inline-block;
+  height: 100%;
+  margin-left: -14px;
+  padding-left: 24px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #5f0080;
+  line-height: 40px;
+  background: url(../../../public/images/ico_search.svg) no-repeat 0 50%;
+  background-size: 25px 24px;
+  vertical-align: top;
+}
+
+.sign__up__container .form__container .form__wrapper .cell__caption__wrapper {
+  width: 90%;
+  padding: 0 14px;
+  font-size: 0.5vw;
+  color: #666;
+  background: #fff;
+}
+
+.sign__up__container .form__container .form__wrapper .cell__caption__wrapper .txt {
+  display: block;
+}
+
+.sign__up__container .form__container .form__wrapper .cell__caption__wrapper .txt::before {
+  content: '\2022';
+  display: inline-block;
+  padding: 0 4px 0 2px;
+  font-size: 12px;
+  vertical-align: 0;
+}
+
+/* DivTable.com */
+.divTable {
+  display: table;
+  width: 100%;
+}
+
+.divTableRow {
+  position: relative;
+  display: table-row;
+}
+
+.divTableHeading {
+  background-color: #eee;
+  display: table-header-group;
+}
+
+.divTableCell, .divTableHeaderCell, .divTableBtnCell {
+  border: 0px solid #999999;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 7px 5px;
+}
+
+.divTableHeaderCell {
+  width: 20%;
+  vertical-align: top;
+  padding: 20px 0 0 20px;
+}
+
+.divTableCell {
+  width: 60%;
+}
+
+.divTableBtnCell {
+  width: 20%;
+  vertical-align: top;
+}
+
+.divTableBody {
+  display: table-row-group;
+}
+
+.color-red {
+  color: red;
+}
 /*# sourceMappingURL=style.css.map */
