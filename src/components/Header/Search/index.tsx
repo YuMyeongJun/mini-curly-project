@@ -6,7 +6,7 @@ function Search() {
         <div className="search__wrapper">
             <form className="form">
                 <input type="text" placeholder="검색어를 입력해주세요." className="search__input" />
-                <input type="image" src="https://res.kurly.com/pc/service/common/1908/ico_search_x2.png" className="btn__search" />
+                <input type="image" src={`${process.env.PUBLIC_URL}/images/ico_search_x2.webp`} className="btn__search" />
             </form>
         </div>
     );
