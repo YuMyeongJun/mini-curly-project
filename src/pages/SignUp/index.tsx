@@ -102,21 +102,50 @@ function SignUp() {
                                     성별
                                 </div>
                                 <div className="divTableCell">
-                                    <label>
+                                    <label className="label">
                                         <input type="radio" name="sex" value="m" />
                                         <span className="ico"></span>
                                         남자
                                     </label>
-                                    <label>
+                                    <label className="label">
                                         <input type="radio" name="sex" value="w" />
                                         <span className="ico"></span>
-                                        남자
+                                        여자
                                     </label>
-                                    <label>
+                                    <label className="label">
                                         <input type="radio" name="sex" value="n" />
                                         <span className="ico"></span>
-                                        남자
+                                        선택안함
                                     </label>
+                                </div>
+                            </div>
+                            <div className="divTableRow">
+                                <div className="divTableHeaderCell">
+                                    생년월일
+                                </div>
+                                <div className="divTableCell">
+                                    <div className="birth__day__wrapper">
+                                        <input type="text" pattern="[0-9]" size={4} maxLength={4} placeholder="YYYY" />
+                                        <span className="bar"></span>
+
+                                        <input type="text" pattern="[0-9]" size={2} maxLength={2} placeholder="MM" />
+                                        <span className="bar"></span>
+
+                                        <input type="text" pattern="[0-9]" size={2} maxLength={2} placeholder="DD" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr className="hr-line" />
+                    <div className="divTable">
+                        <div className="divTableBody">
+                            <div className="divTableRow">
+                                <div className="divTableHeaderCell">
+                                    이용약관동의{spanAn}
+                                </div>
+                                <div className="divTableCell" style={{ width: "100%" }}>
+
                                 </div>
                             </div>
                         </div>
