@@ -3,7 +3,7 @@ import './style.css';
 
 function SignUp() {
     const spanAn = <span className="color-red">*</span>;
-    const [idCellStyle, setIdCellStyle] = useState({ display: "none" });
+    const [idCellStyle, setIdCellStyle] = useState({ display: "none", width: "100%" });
     const titlePadding = { padding: "10px 0px" };
     const inputPadding = { padding: "10px 5px" };
 
@@ -23,15 +23,17 @@ function SignUp() {
                                     아이디{spanAn}
                                 </div>
                                 <div className="divTableCell" style={inputPadding}>
-                                    <input type="text" className="inputs" placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합" onClick={() => { setIdCellStyle({ display: "block" }); }} />
+                                    <input type="text" className="inputs" placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합" onClick={() => { setIdCellStyle({ display: "block", width: "100%" }) }} />
                                 </div>
                                 <div className="divTableCell" style={inputPadding}>
                                     <a href="#" className="btn">중복체크</a>
                                 </div>
-                                <p className="cell__caption__wrapper" style={idCellStyle}>
+                            </div>
+                            <div className="divTableRow">
+                                <div className="divTableCell cell__caption__wrapper" style={idCellStyle}>
                                     <span className="txt_case1">6자 이상의 영문 혹은 영문과 숫자를 조합</span>
                                     <span className="txt_case2">아이디 중복확인</span>
-                                </p>
+                                </div>
                             </div>
                             <div className="divTableRow">
                                 <div className="divTableCell" style={titlePadding}>
