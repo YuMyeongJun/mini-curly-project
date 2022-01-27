@@ -138,17 +138,82 @@ function SignUp() {
                         </div>
                     </div>
                     <hr className="hr-line" />
-                    <div className="divTable">
-                        <div className="divTableBody">
-                            <div className="divTableRow">
-                                <div className="divTableHeaderCell">
-                                    이용약관동의{spanAn}
-                                </div>
-                                <div className="divTableCell" style={{ width: "100%" }}>
+                    <div className="reg__wrapper">
+                        <div className="title">
+                            이용약관동의{spanAn}
+                        </div>
+                        <div className="check__list">
+                            <div className="check">
+                                <input type="checkbox" name="all_check" />
+                                <span className="ico"></span>
+                                전체 동의합니다.
+                                <p className="sub">
+                                    선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.
+                                </p>
+                            </div>
+                            <div className="check_view">
+                                <label className="check_agree">
+                                    <input type="checkbox" name="agree" />
+                                    <span className="ico"></span>
+                                    이용약관 동의
+                                    <span className="sub">(필수)</span>
+                                </label>
+                                <a href="#" className="btn_agreement">약관보기</a>
+                            </div>
 
+                            <div className="check_view">
+                                <label className="check_agree">
+                                    <input type="checkbox" name="private1" />
+                                    <span className="ico"></span>
+                                    개인정보 수집·이용 동의
+                                    <span className="sub">(필수)</span>
+                                </label>
+                                <a href="#" className="btn_agreement">약관보기</a>
+                            </div>
+
+                            <div className="check_view">
+                                <label className="check_agree">
+                                    <input type="checkbox" name="hiddenCheck" />
+                                    <span className="ico"></span>
+                                    개인정보 수집·이용 동의
+                                    <span className="sub">(선택)</span>
+                                </label>
+                                <a href="#" className="btn_agreement">약관보기</a>
+                            </div>
+                            <div className="check_view">
+                                <label className="check_agree">
+                                    <input type="checkbox" name="marketing" />
+                                    <span className="ico"></span>
+                                    무료배송, 할인쿠폰 등 혜택/정보 수신 동의
+                                    <span className="sub">(선택)</span>
+                                </label>
+                                <div className="email_sms">
+                                    <label className="check_agree">
+                                        <input type="checkbox" name="sms" />
+                                        <span className="ico"></span>
+                                        SMS
+                                    </label>
+
+                                    <label className="check_agree">
+                                        <input type="checkbox" name="email" />
+                                        <span className="ico"></span>
+                                        이메일
+                                    </label>
                                 </div>
                             </div>
+
+                            <div className="check_view">
+                                <label className="check_agree">
+                                    <input type="checkbox" name="fourteen_chk" />
+                                    <span className="ico"></span>
+                                    본인은 만 14세 이상입니다.
+                                    <span className="sub">(필수)</span>
+                                </label>
+                            </div>
                         </div>
+                    </div>
+                    <div className="form__footer">
+                        <button type="button" className="btn">가입하기</button>
                     </div>
                 </form>
             </article>
