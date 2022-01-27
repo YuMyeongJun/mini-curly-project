@@ -1,4 +1,5 @@
 import React from "react";
+import { Route, Link } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -38,12 +39,12 @@ function Footer() {
                     </div>
                     <div className="right__wrapper">
                         <div className="title__link">
-                            <link>컬리소개</link>
-                            <link>컬리소개영상</link>
-                            <link>인재채용</link>
-                            <link>이용약관</link>
-                            <link>개인정보처리방침</link>
-                            <link>이용안내</link>
+                            <Link to="/">컬리소개</Link>
+                            <Link to="/">컬리소개영상</Link>
+                            <Link to="/">인재채용</Link>
+                            <Link to="/">이용약관</Link>
+                            <Link to="/">개인정보처리방침</Link>
+                            <Link to="/">이용안내</Link>
                         </div>
                         <div className="detail__wrapper">
                             <div className="">법인명 (상호): 주식회사 미니컬리 | 사업자등록번호: 111-11-11111 <a href="#">사업자정보 확인</a></div>
