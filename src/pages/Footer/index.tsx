@@ -55,10 +55,21 @@ function Footer() {
                     </div>
                     <div className="sns__link">
                         <ul>
-                            <li>인스타그램</li>
-                            <li>페이스북</li>
-                            <li>블로그</li>
-                            <li>유튜브</li>
+                            <li>
+                                <a href="#">
+                                    <img src={`${process.env.PUBLIC_URL}/images/ico_instagram.png`} />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src={`${process.env.PUBLIC_URL}/images/ico_fb.png`} />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src={`${process.env.PUBLIC_URL}/images/youtube.png`} />
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
