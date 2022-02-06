@@ -7,12 +7,13 @@ import './css/App.css';
 const param = new URLSearchParams();
 param.append('memberId', 'sion1234');
 param.append('password', 'Aa123!12311#');
+
 axios.post('/api/login', param)
   .then((res) => {
     console.log(res)
   })
   .catch((e) => {
-
+    console.log(e);
   })
 
 function App() {
