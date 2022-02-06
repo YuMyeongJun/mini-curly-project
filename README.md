@@ -8,4 +8,5 @@
 - nodejs install
 - npm install
 - npm update => 일부 모듈 빌드 실패 시
-- npm start
+
+- yarn dev
