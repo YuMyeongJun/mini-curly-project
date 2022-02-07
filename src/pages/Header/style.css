@@ -1,2 +1,106 @@
-.header__container{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.header__container .header__wrapper{-webkit-box-flex:1px;-ms-flex:1px;flex:1px;width:50%;height:20%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.header__container .header__wrapper .top__wrapper{-webkit-box-flex:1;-ms-flex:1;flex:1;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;vertical-align:middle}.header__container .header__wrapper .top__wrapper .top__wrapper__left{-webkit-box-flex:1;-ms-flex:1;flex:1}.header__container .header__wrapper .top__wrapper .top__wrapper__left .shipping__information>img{width:122px;height:22px}.header__container .header__wrapper .top__wrapper .top__wrapper__right{-webkit-box-flex:1;-ms-flex:1;flex:1;text-align:right}.header__container .header__wrapper .top__wrapper .top__wrapper__right>ul{list-style-type:none}.header__container .header__wrapper .top__wrapper .top__wrapper__right>ul>li{display:inline;position:relative;margin:5px;font-size:0.7vw}.header__container .header__wrapper .top__wrapper .top__wrapper__right>ul .a1::after,.header__container .header__wrapper .top__wrapper .top__wrapper__right>ul .a2::after{content:"";width:1px;height:13px;margin-top:12px;background-color:#333}.header__container .header__wrapper .top__wrapper .top__wrapper__right>ul .a3::before{content:"";position:absolute;right:-10px;top:10px;width:8px;height:5px;background:url(https://res.kurly.com/pc/ico/1908/ico_down_8x5.png) no-repeat 0 0}.header__container .header__wrapper .header__img{width:100%;text-align:center}.header__container .header__wrapper .header__img img{width:80px}a{-webkit-text-decoration-line:none;text-decoration-line:none;color:#333}
+.header__container {
+  width: 100%;
+  min-width: 1050px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__container .header__wrapper {
+  -webkit-box-flex: 1px;
+      -ms-flex: 1px;
+          flex: 1px;
+  width: 75%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__container .header__wrapper .top__wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+}
+
+.header__container .header__wrapper .top__wrapper .top__wrapper__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.header__container .header__wrapper .top__wrapper .top__wrapper__left .shipping__information > img {
+  width: 122px;
+  height: 22px;
+}
+
+.header__container .header__wrapper .top__wrapper .top__wrapper__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+.header__container .header__wrapper .top__wrapper .top__wrapper__right > ul {
+  list-style-type: none;
+}
+
+.header__container .header__wrapper .top__wrapper .top__wrapper__right > ul > li {
+  display: inline;
+  position: relative;
+  margin: 5px;
+  font-size: 0.7vw;
+}
+
+.header__container .header__wrapper .top__wrapper .top__wrapper__right > ul .a1::after,
+.header__container .header__wrapper .top__wrapper .top__wrapper__right > ul .a2::after {
+  content: "";
+  width: 1px;
+  height: 13px;
+  margin-top: 12px;
+  background-color: #333;
+}
+
+.header__container .header__wrapper .top__wrapper .top__wrapper__right > ul .a3::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 10px;
+  width: 8px;
+  height: 5px;
+  background: url(https://res.kurly.com/pc/ico/1908/ico_down_8x5.png) no-repeat 0 0;
+}
+
+.header__container .header__wrapper .header__img {
+  width: 100%;
+  text-align: center;
+}
+
+.header__container .header__wrapper .header__img img {
+  width: 80px;
+}
+
+a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #333;
+}
 /*# sourceMappingURL=style.css.map */

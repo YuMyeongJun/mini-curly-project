@@ -1,5 +1,6 @@
 .sign__up__container {
   width: 100%;
+  min-width: 1050px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,11 +16,12 @@
 
   .form__container {
     flex: 1;
-    width: 25%;
+    width: 35%;
+    min-width: 500px;
 
     .form__wrapper {
       width: 100%;
-      font-size: 0.6vw;
+      font-size: 0.8vw;
 
       .caption {
         width: 100%;
@@ -28,7 +30,7 @@
 
       .inputs {
         height: 44px;
-        width: 90%;
+        width: calc(100% - 28px);
         padding: 0 14px;
         border: 1px solid #ccc;
         color: #333;
@@ -66,29 +68,138 @@
           vertical-align: top;
         }
       }
+
+      /* DivTable.com */
+      .divTable {
+        display: table;
+        width: 100%;
+
+        .divTableRow {
+          position: relative;
+          display: table-row;
+
+          .divTableCell,
+          .divTableHeaderCell,
+          .divTableBtnCell {
+            border: 0px solid #999999;
+            display: table-cell;
+            vertical-align: middle;
+            padding: 7px 5px;
+          }
+
+          .divTableHeaderCell {
+            width: 20%;
+            vertical-align: top;
+            padding: 20px 0 0 20px;
+          }
+
+          .divTableCell {
+            width: 60%;
+            .cell__caption__wrapper {
+              width: 90%;
+              padding: 0 14px;
+              font-size: 0.5vw;
+              color: #666;
+              background: #fff;
+
+              .txt {
+                display: block;
+
+                &::before {
+                  content: "\2022";
+                  display: inline-block;
+                  padding: 0 4px 0 2px;
+                  font-size: 12px;
+                  vertical-align: 0;
+                }
+              }
+            }
+
+            .label {
+              display: inline-block;
+              padding: 10px 50px 10px 0;
+              vertical-align: top;
+
+              input[type="radio"] {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+              }
+
+              input[type="radio"] + .ico {
+                display: inline-block;
+                position: relative;
+                width: 24px;
+                height: 24px;
+                margin-right: 12px;
+                border: 1px solid #ddd;
+                background-color: #fff;
+                border-radius: 100%;
+                vertical-align: -7px;
+              }
+
+              input[type="radio"]:checked + .ico {
+                border: 1px solid #5f0081;
+                background-color: #5f0080;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  width: 10px;
+                  height: 10px;
+                  margin: -5px 0 0 -5px;
+                  border-radius: 100%;
+                  background-color: #fff;
+                }
+              }
+            }
+
+            .birth__day__wrapper {
+              overflow: hidden;
+              width: 100%;
+              border: 1px solid #ccc;
+              border-radius: 3px;
+
+              input[type="text"] {
+                float: left;
+                width: 84px;
+                height: 40px;
+                border: 0;
+                text-align: center;
+                padding: 0 14px;
+                font-size: 14px;
+                color: #333;
+                line-height: 20px;
+                border-radius: 3px;
+                background: #fff;
+                outline: none;
+                vertical-align: top;
+              }
+
+              .bar {
+                &::after {
+                  content: "/";
+                  float: left;
+                  width: 22px;
+                  height: 100%;
+                  font-size: 14px;
+                  color: #ccc;
+                  line-height: 42px;
+                  text-align: center;
+                }
+              }
+            }
+          }
+
+          .divTableBtnCell {
+            width: 20%;
+            vertical-align: top;
+          }
+        }
+      }
     }
   }
-}
-
-/* DivTable.com */
-.divTable {
-  display: table;
-  width: 100%;
-}
-.divTableRow {
-  display: table-row;
-}
-.divTableHeading {
-  background-color: #eee;
-  display: table-header-group;
-}
-.divTableCell {
-  border: 0px solid #999999;
-  display: table-cell;
-  vertical-align: middle;
-}
-.divTableBody {
-  display: table-row-group;
 }
 
 .color-red {
