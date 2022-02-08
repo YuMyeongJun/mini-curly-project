@@ -5,8 +5,8 @@ import { Header, Menus, Footer, MainBody, SignUp } from './pages';
 import './css/App.css';
 
 const param = new URLSearchParams();
-param.append('memberId', 'sion1234');
-param.append('password', 'Aa123!12311#');
+param.append('memberId', 'superadmin');
+param.append('password', 'Admin1234!@#$');
 
 axios.post('/api/login', param)
   .then((res) => {

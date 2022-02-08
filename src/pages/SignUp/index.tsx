@@ -7,6 +7,30 @@ function SignUp() {
     const [passWord, setPassWord] = useState({ display: "none" });
     const [passWordCheck, setPassWordCheck] = useState({ display: "none" });
 
+    const [checkedAgreement, setCheckedAgreement] = useState(new Set());
+    const [isAllChecked, setIsAllChecked] = useState(false);
+    const [bChecked, setChecked] = useState(false);
+
+    const checkedAgreementHandler = (id: any, isChecked: any) => {
+        if (isChecked) {
+            checkedAgreement.add(id);
+            setCheckedAgreement(checkedAgreement);
+        } else if (!isChecked && checkedAgreement.has(id)) {
+            checkedAgreement.delete(id);
+            setCheckedAgreement(checkedAgreement);
+        }
+    };
+
+
+
+    // const checkHandler = ({ target }) => {
+    //     setChecked(!bChecked);
+    //     checkedAgreementHandler(issue.id, target.checked);
+    // };
+
+    //const allCheckedHandler = (isChecked)
+
+
     return (
         <section className="sign__up__container">
             <article className="header__title">
@@ -144,15 +168,18 @@ function SignUp() {
                         </div>
                         <div className="check__list">
                             <div className="check">
-                                <input type="checkbox" name="all_check" />
-                                <span className="ico"></span>
-                                전체 동의합니다.
+
+                                <label className="label_all_check label_block">
+                                    <input type="checkbox" name="all_check" />
+                                    <span className="ico"></span>
+                                    전체 동의합니다.
+                                </label>
                                 <p className="sub">
                                     선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.
                                 </p>
                             </div>
                             <div className="check_view">
-                                <label className="check_agree">
+                                <label className="check_agree label_block">
                                     <input type="checkbox" name="agree" />
                                     <span className="ico"></span>
                                     이용약관 동의
@@ -162,7 +189,7 @@ function SignUp() {
                             </div>
 
                             <div className="check_view">
-                                <label className="check_agree">
+                                <label className="check_agree label_block">
                                     <input type="checkbox" name="private1" />
                                     <span className="ico"></span>
                                     개인정보 수집·이용 동의
@@ -172,7 +199,7 @@ function SignUp() {
                             </div>
 
                             <div className="check_view">
-                                <label className="check_agree">
+                                <label className="check_agree label_block">
                                     <input type="checkbox" name="hiddenCheck" />
                                     <span className="ico"></span>
                                     개인정보 수집·이용 동의
@@ -181,7 +208,7 @@ function SignUp() {
                                 <a href="#" className="btn_agreement">약관보기</a>
                             </div>
                             <div className="check_view">
-                                <label className="check_agree">
+                                <label className="check_agree label_block">
                                     <input type="checkbox" name="marketing" />
                                     <span className="ico"></span>
                                     무료배송, 할인쿠폰 등 혜택/정보 수신 동의
@@ -200,10 +227,14 @@ function SignUp() {
                                         이메일
                                     </label>
                                 </div>
+                                <p className="sms_info">
+                                    동의 시 한 달간 [5% 적립] + [무제한 무료배송]
+                                    <span className="sub">(첫 주문 후 적용)</span>
+                                </p>
                             </div>
 
                             <div className="check_view">
-                                <label className="check_agree">
+                                <label className="check_agree label_block">
                                     <input type="checkbox" name="fourteen_chk" />
                                     <span className="ico"></span>
                                     본인은 만 14세 이상입니다.
@@ -217,7 +248,7 @@ function SignUp() {
                     </div>
                 </form>
             </article>
-        </section>
+        </section >
     );
 }
 
