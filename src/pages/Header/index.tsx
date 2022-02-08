@@ -16,8 +16,8 @@ function Header() {
                     </div>
                     <div className="top__wrapper__right">
                         <ul>
-                            <li className="a1"><Link to="/signUp" className="sign__up__link">회원가입</Link></li>
-                            <li className="a2"><Link to="/signIn" className="sign__in__link">로그인</Link></li>
+                            <li className="a1"><Link to="/SignUp" className="sign__up__link">회원가입</Link></li>
+                            <li className="a2"><Link to="/SignIn" className="sign__in__link">로그인</Link></li>
                             <li className="a3"><Link to="/" className="customer__service__center_link">고객센터</Link></li>
                         </ul>
                     </div>

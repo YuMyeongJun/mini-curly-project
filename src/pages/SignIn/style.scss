@@ -1,0 +1,27 @@
+.sign__up__container {
+  width: 100%;
+  min-width: 1050px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .header__title {
+    flex: 1;
+    text-align: center;
+    padding: 25px;
+    font-size: 1.5vw;
+    font-weight: bold;
+  }
+
+  .form__container {
+    flex: 1;
+    width: 35%;
+    min-width: 500px;
+
+    .form__wrapper {
+      width: 100%;
+      font-size: 0.8vw;
+    }
+  }
+}
